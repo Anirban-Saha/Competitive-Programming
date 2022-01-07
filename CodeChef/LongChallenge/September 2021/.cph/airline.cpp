@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b,c,d,e;
+        cin>>a>>b>>c>>d>>e;
+        ll sum=0,carry;
+        if(a+b<=d && c<=e)
+        cout<<"YES"<<endl;
+        else if(a+c<=d && b<=e)
+        cout<<"YES"<<endl;
+        else if(b+c<=d && a<=e)
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
+    }
+return 0;
+}
+
+
+
