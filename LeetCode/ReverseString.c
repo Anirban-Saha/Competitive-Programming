@@ -6,7 +6,7 @@ int main(void)
 {
     printf("\nEnter a string!\n");
     char str[m];
-    gets(str);
+    scanf("%s",&str);
     printf("\nThe string after reversal is:");
     rev(str);
     
