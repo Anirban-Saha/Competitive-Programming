@@ -17,22 +17,16 @@
 // § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
-let dolphineScore=97+112+101;
-let koalaScore=109+95+106;
-let avgDolphine=dolphineScore/3;
-let avgKoala=koalaScore/3;
-if(avgDolphine>avgKoala && avgDolphine>=100){
-
-    console.log(`Team Dolphine Wins!`)
-}
-else if(avgKoala>avgDolphine && avgKoala>=100){
-
-    console.log(`Team Koala Wins!`)
-}
-else if(avgDolphine===avgKoala && avgDolphine>=100 && avgKoala>=100){
-
-    console.log(`Draw!`)
-}
-else{
-    console.log(`No team Wins!`)
+let dolphineScore = 97 + 112 + 101;
+let koalaScore = 109 + 95 + 106;
+let avgDolphine = dolphineScore / 3;
+let avgKoala = koalaScore / 3;
+if (avgDolphine > avgKoala && avgDolphine >= 100) {
+  console.log(`Team Dolphine Wins!`);
+} else if (avgKoala > avgDolphine && avgKoala >= 100) {
+  console.log(`Team Koala Wins!`);
+} else if (avgDolphine === avgKoala && avgDolphine >= 100 && avgKoala >= 100) {
+  console.log(`Draw!`);
+} else {
+  console.log(`No team Wins!`);
 }

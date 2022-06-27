@@ -13,11 +13,11 @@
 // m tall.
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall
-const heightOfMark=1.69;
-const weightOfMark=78;
-const heightOfJohn=1.95;
-const weightOfJohn=92;
-var bmiOfMark=weightOfMark/heightOfMark**2;
-var bmiOfJohn=weightOfJohn/heightOfJohn**2;
-var markHigherBMI=bmiOfMark>bmiOfJohn;
+const heightOfMark = 1.69;
+const weightOfMark = 78;
+const heightOfJohn = 1.95;
+const weightOfJohn = 92;
+var bmiOfMark = weightOfMark / heightOfMark ** 2;
+var bmiOfJohn = weightOfJohn / heightOfJohn ** 2;
+var markHigherBMI = bmiOfMark > bmiOfJohn;
 console.log(bmiOfMark, bmiOfJohn, markHigherBMI);
