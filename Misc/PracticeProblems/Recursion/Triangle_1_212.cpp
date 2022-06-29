@@ -3,7 +3,7 @@ using namespace std;
 
 void display( int row){
     int j,i;
-    cout<<endl;
+    cout<<"The required output: \n";
     for(i=1;i<=row;i++)
     {
         for(j=1;j<=row-i;j++)
