@@ -22,6 +22,4 @@ char rev(char str[m])
   	}
     r[l]='\0';
     printf("\n%s",r);
-    
-    
 }
