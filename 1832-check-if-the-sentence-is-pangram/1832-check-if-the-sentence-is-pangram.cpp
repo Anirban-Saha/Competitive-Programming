@@ -1,14 +1,16 @@
 class Solution {
 public:
     bool checkIfPangram(string sentence) {
-   bool f[26] = {};
-for(int i = 0;i<sentence.size();i++)
-f[sentence[i]-'a']=true;
-for(int i=0;i<26;i++){
-if(f[i]==false)
-return false;
-}
-return true;
-}
+        if(sentence.size()<26){ return false;}
+        vector<bool> arr(26,false);
+        for(int i=0;i<sentence.size();i++){ 
+            arr[sentence[i]-'a']=true;
+        }
+        for(int i=0;i<26;i++){
+            if(arr[i]==false)
+            return false;
+            }
+            return true;
 
+    }
 };
