@@ -8,7 +8,7 @@
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
-        int i;
+        int i,j;
     }
 };
 // @lc code=end
