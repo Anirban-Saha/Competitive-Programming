@@ -5,8 +5,8 @@ public:
         if(ruleKey=="type"){x=0;}
         if(ruleKey=="color"){x=1;}
         if(ruleKey=="name"){x=2;}
-        for(auto item: items)
-        {if(item[x]==ruleValue){c++;}}
+        for(int i=0; i<items.size();i++)
+        {if(items[i][x]==ruleValue){c++;}}
         return c;
         }
 };
