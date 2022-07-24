@@ -17,7 +17,7 @@ public:
         sum=nums[l-1];
         for(int i=0; i<l;i++)
         {
-            if(nums[i]==sum-nums[l-1-i]){return i+1;} 
+            if(nums[i]==sum-nums[l-1-i]) {return i+1;} 
          }
         
         return -1;
