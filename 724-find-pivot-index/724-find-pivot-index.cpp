@@ -3,16 +3,14 @@ public:
     int pivotIndex(vector<int>& nums) {
         //prefix[] stores the prefix sum of nums[]
         int l=nums.size();
-        vector<int> prefix;
-        int sum2=0;
-        for(int i=0;i<l;i++){
-        sum2=sum2+nums[i];
-        prefix.push_back(sum2);
+        int sum2=0, sum=0;
+        for(int i=0;i<l;i++)
+        {
+            sum2=sum2+nums[i];
         }
-        int total=prefix[l-1];
         for(int i=0; i<l;i++)
-        {   
-            if((prefix[i]-nums[i])==(total-prefix[i]))
+        {   sum=sum+nums[i];
+            if((sum-nums[i])==(sum2-sum))
             {
                 return i;
             } 
