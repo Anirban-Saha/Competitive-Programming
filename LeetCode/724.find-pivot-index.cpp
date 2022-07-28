@@ -9,7 +9,7 @@ class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
         int l=nums.size();
-        int sum2=0, sum=0;
+        int sum2=0, sum=0, sol;
         for(int i=0;i<l;i++)
         {
             sum2=sum2+nums[i];
